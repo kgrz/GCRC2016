@@ -8,17 +8,19 @@
     <style>
       body {
         font-size: 100%;
-        font-family: "Fira Sans", "Source Sans", sans-serif;
+        font-family: "ratio-display", "Fira Sans", "Source Sans Pro", sans-serif;
       }
 
-      .notice--big {
-        font-size: 2rem;
+      .notice--heading {
+        font-size: 2.5rem;
         line-height: 1.4;
+        font-weight: 300;
       }
 
-      .notice--small {
+      .notice--subhead {
         font-size: 1.1rem;
         line-height: 1.4;
+        font-weight: 300;
       }
 
       .notice__wrapper {
@@ -39,18 +41,32 @@
           margin-top: 2rem;
         }
       }
+
+      .wf-inactive .notice--heading {
+        font-size: 2.2rem;
+      }
+
     </style>
+    <script>
+      (function(d) {
+        var config = {
+          kitId: 'jpj7ipa',
+          scriptTimeout: 3000
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
   </head>
   <body>
     <div class="notice__wrapper">
       <img src="assets/images/gcrc.png" alt="Garden City Ruby Conf"/>
-      <p class="notice--big">
-        The 2016 edition is coming soon!
-      </p>
-      <p class="notice--small">
+      <h1 class="notice--heading">
+        The 2016 edition of Garden City Ruby Conference is coming soon!
+      </h1>
+      <h2 class="notice--subhead">
         Stay tuned for updates via Twitter
         <a href="https://twitter.com/GardenCityRb">@GardenCityRb</a>
-      </p>
+      </h2>
     </div>
   </body>
 </html>
