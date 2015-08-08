@@ -27,7 +27,7 @@
         margin: auto;
         max-width: 43rem;
         text-align: center;
-        margin-top: 10rem;
+        margin-top: 6rem;
       }
 
       @media (max-width: 700px) {
@@ -36,15 +36,30 @@
         }
       }
 
+      .logo {
+        height: 15em;
+        width: 15em;
+      }
+
       @media (max-width: 400px) {
         .notice__wrapper {
           margin-top: 2rem;
+        }
+
+        .logo {
+          height: 10em;
+          width: 10em;
+        }
+
+        .notice--heading {
+          font-size: 2rem;
         }
       }
 
       .wf-inactive .notice--heading {
         font-size: 2.2rem;
       }
+
 
     </style>
     <script>
@@ -59,7 +74,7 @@
   </head>
   <body>
     <div class="notice__wrapper">
-      <img src="assets/images/gcrc.png" alt="Garden City Ruby Conf"/>
+      <img src="assets/images/gcrc.svg" alt="Garden City Ruby Conf" class="logo"/>
       <h1 class="notice--heading">
         The 2016 edition of Garden City Ruby Conference is coming soon!
       </h1>
