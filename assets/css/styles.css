@@ -3,13 +3,13 @@ body {
   font-family: "ratio-display", "Fira Sans", "Source Sans Pro", sans-serif;
 }
 
-.notice--heading {
+.notice__heading {
   font-size: 2.5rem;
   line-height: 1.4;
   font-weight: 300;
 }
 
-.notice--subhead {
+.notice__subhead {
   font-size: 1.1rem;
   line-height: 1.4;
   font-weight: 300;
@@ -28,11 +28,6 @@ body {
   }
 }
 
-.logo {
-  height: 15em;
-  width: 15em;
-}
-
 @media (max-width: 400px) {
   .notice__wrapper {
     margin-top: 2rem;
@@ -43,17 +38,17 @@ body {
     width: 10em;
   }
 
-  .notice--heading {
+  .notice__heading {
     font-size: 2rem;
   }
 }
 
-.wf-inactive .notice--heading {
+.wf-inactive .notice__heading {
   font-size: 2.2rem;
 }
 
 
-nav li {
+.nav__listitem {
   list-style: none;
   display: inline-block;
   padding: 5vh 5vw;
@@ -64,27 +59,44 @@ nav ul { margin: 0; padding: 0; }
 
 nav {
   border-bottom: 2px solid rgba(0,0,0,0.1);
-  height: 4rem;
+  height: 20vh;
   padding: 0;
   margin: 0 auto;
   overflow: hidden;
   width: 80vw;
+  font-size: 1.2rem;
 }
 
-nav a {
-  font-size: 1.2rem;
+.nav__link {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.6);
   padding-bottom: 0.4rem;
 }
 
-nav a:hover {
+.nav__link:hover {
   color: rgba(0, 0, 0, 1);
   border-bottom: 1px solid rgba(255, 1, 33, 1);
 }
 
-.nav--links {
+.nav__linkslist {
   min-width: 50vw;
   float: right;
   text-align: right;
+}
+
+.nav__logo {
+  width: 30vw;
+  float: left;
+}
+
+.nav__logo_image {
+  height: 3vw;
+  width: 3vw;
+  padding-top: 2vh;
+}
+
+.nav__logo_type {
+  padding: 5vh 1vw;
+  display: inline-block;
+  vertical-align: top;
 }
